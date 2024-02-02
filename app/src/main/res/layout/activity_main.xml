@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/gobutton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:text="Go"
         android:gravity="center"
         android:textColor="@color/white"
@@ -29,8 +29,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/gobuttonbg"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
         android:shadowColor="#000000"
         android:shadowDx="0"
         android:shadowDy="4"

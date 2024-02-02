@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@drawable/img"
+    android:background="@drawable/loginbg"
     android:padding="10dp"
     >
 
@@ -48,11 +48,62 @@
         app:endIconMode="password_toggle"
         app:helperText="Required*"
         app:helperTextTextColor="#FF0000"
+        android:id="@+id/passbelow"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/passwordinputedittext"
             />
     </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/passbelow"
+        android:backgroundTint="#26D616"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_marginTop="30dp"
+        android:id="@+id/loginbutton"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I have no account?"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/loginbutton"
+        android:id="@+id/registerback"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/registerback"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/facebook"
+        android:id="@+id/loginfacebook"
+        android:layout_marginHorizontal="5dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/logingoogle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/google"
+        android:layout_marginHorizontal="5dp"
+
+        />
+
+    </LinearLayout>
 </RelativeLayout>

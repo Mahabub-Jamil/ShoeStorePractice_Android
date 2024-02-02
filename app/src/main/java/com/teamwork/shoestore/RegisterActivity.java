@@ -6,30 +6,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
-
-    Button login;
-    TextView register;
+public class RegisterActivity extends AppCompatActivity {
+    TextView registerback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Window window = this.getWindow();
         window.setStatusBarColor(this.getResources().getColor(R.color.pink));
-        setContentView(R.layout.activity_login);
-        register = findViewById(R.id.registerback);
-        login = findViewById(R.id.loginbutton);
+        setContentView(R.layout.activity_register);
 
-        register.setOnClickListener(new View.OnClickListener() {
+        registerback = findViewById(R.id.loginback);
+
+        registerback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inp = new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivity(inp);
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
             }
         });
-
-
     }
 }
