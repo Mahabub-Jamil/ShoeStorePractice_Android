@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:id="@+id/body">
+    <item
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="History"
+        android:icon="@drawable/history"/>
+
+    <item
+        android:id="@+id/aboutus"
+        android:icon="@drawable/aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="About us" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Share" />
+    <item
+        android:id="@+id/rateus"
+        android:icon="@drawable/ratting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Rate us" />
+</group>
+    <group android:id="@+id/tail">
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Setting" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Logout" />
+    </group>
+</menu>

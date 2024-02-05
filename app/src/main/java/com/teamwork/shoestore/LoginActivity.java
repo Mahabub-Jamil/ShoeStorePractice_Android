@@ -17,11 +17,17 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Window window = this.getWindow();
-        window.setStatusBarColor(this.getResources().getColor(R.color.pink));
+        window.setStatusBarColor(this.getResources().getColor(R.color.white));
         setContentView(R.layout.activity_login);
         register = findViewById(R.id.registerback);
         login = findViewById(R.id.loginbutton);
-
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+                finish();
+            }
+        });
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

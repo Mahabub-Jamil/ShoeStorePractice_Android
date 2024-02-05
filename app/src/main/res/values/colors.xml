@@ -2,5 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pink">#80FBFBFB</color>
+    <color name="Actionbar">#860A35</color>
+    <color name="card">#AF2655</color>
+    <color name="NavbarHome">#AF2655</color>
+    <color name="ViewMore">#3974B9</color>
+    <color name="DetailsShoe">#651631</color>
+    <color name="Reviews">#651631</color>
+    <color name="Buynow">#F15D90</color>
+    <color name="ShoeColourbg">#D3D8C1</color>
+
+
 </resources>

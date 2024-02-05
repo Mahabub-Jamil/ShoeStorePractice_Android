@@ -14,7 +14,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Window window = this.getWindow();
-        window.setStatusBarColor(this.getResources().getColor(R.color.pink));
+        window.setStatusBarColor(this.getResources().getColor(R.color.white));
         setContentView(R.layout.activity_register);
 
         registerback = findViewById(R.id.loginback);
