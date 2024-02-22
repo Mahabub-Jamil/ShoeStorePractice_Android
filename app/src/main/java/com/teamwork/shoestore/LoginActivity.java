@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button login;
+    TextView login;
     TextView register;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,9 @@ public class LoginActivity extends AppCompatActivity {
         Window window = this.getWindow();
         window.setStatusBarColor(this.getResources().getColor(R.color.white));
         setContentView(R.layout.activity_login);
-        register = findViewById(R.id.registerback);
+
         login = findViewById(R.id.loginbutton);
+        register = findViewById(R.id.ihaveanaccount);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,11 +29,12 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inp = new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivity(inp);
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+                finish();
             }
         });
 
